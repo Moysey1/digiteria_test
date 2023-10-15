@@ -1,0 +1,181 @@
+@import '_mixin.scss';
+@import '_variables.scss';
+
+
+.filter {
+    float: left;
+    max-width: 290px;
+    overflow: hidden;
+    margin-right: margin(9);
+    @media (max-width: 768px) {
+        position:absolute;
+        max-width: 80%;
+        transition: transform 0.5s ease-in-out;
+        transform: translateX(-150%);
+        &__open {
+            display: block;
+            transform: translateX(10%);
+        }
+    }
+    &__category {
+        padding: 0 16px 0 8px;
+        margin-bottom: margin(6);
+        &-title {
+            @include aside-text;
+            margin-bottom: margin(2);
+        }
+        &-list {
+            list-style: none;
+        }
+        &-item {
+            display: flex;
+            justify-content: space-between;
+            padding-left: 32px;
+            margin-bottom: margin(2);
+            cursor: pointer;
+            @include btn-transition;
+            @include text-effect;
+            &__desc {
+                @include aside-text;
+            }   
+            &__count {
+                @include aside-count-text;
+            }
+        }
+    }
+    &__price {
+        margin-bottom: margin(6);
+        &-title {
+            @include aside-title;
+            text-align: center;
+            margin-bottom: margin(4);
+        }
+        &-limit {
+            display: flex;
+            align-items: center;
+            &__label {
+                width: 49%;
+            }
+            &__desc {
+                width: 10px;
+                border: 1px solid rgba(213, 213, 213, 1);
+                height: 1px;
+                margin: 0 16px;
+            }
+            
+
+            &__input {
+                width: 100%;
+                padding: 8px 10px;
+                &:focus {
+                    border:none;
+                    outline: none;
+                }
+                &::placeholder {
+                    @include aside-count-text;
+                }
+                @include btn-transition;
+                @include input-focus;
+            }
+        }
+    }
+    &__brand {
+        margin-bottom: margin(6);
+        &-desc {
+            display:flex;
+            justify-content: space-between;
+            align-items:center;
+            margin-bottom:margin(4);
+        }
+        &-title {
+            @include aside-title;
+        }
+
+        &-btn {
+            @include aside-count-text;
+            text-decoration:underline;
+            @include btn-transition;
+            &:hover {
+                color: $color-red;
+                transform: scale(1.02);
+            }
+            &:focus {
+                outline: none;
+                color: $color-red;
+            }
+            &:active {
+                color: $color-black;
+                transform: scale(0.9);
+            }
+        }
+        &-label {
+            position: relative;
+            &::before {
+                content:url('../img/filter_search.svg');
+                position: absolute;
+                left: 12px;
+                top: 1px;
+                z-index: 10;
+            }
+            
+        }
+        &-input {
+            width: 100%;
+            padding: 10px 12px 10px 32px;
+            border: 1px solid rgba(213, 213, 213, 1);
+            border-radius: 8px;
+            margin-bottom: margin(4);
+            &:focus {
+                border:none;
+                outline: none;
+            }
+            @include btn-transition;
+            @include input-focus;
+        }
+        &-list {
+            max-height: 180px;
+            overflow-y: scroll;
+        }
+        &-item {
+            display: flex;
+            justify-content: space-between;
+            padding-right: 16px;
+            margin-bottom: 12px;
+            @include castom-checkbox;
+            @include btn-transition;
+            @include checkbox-effect;
+        
+            &__text {
+                @include aside-text
+            }
+            &__count {
+                @include aside-count-text
+            }
+        }
+    }
+    &__size {
+        &-title {
+            margin-bottom:margin(4);
+            text-align: center;
+            @include aside-title;
+            
+        }
+        &-item {
+            display: flex;
+            justify-content: space-between;
+            padding-right: 16px;
+            margin-bottom: 12px;
+            @include castom-checkbox;
+            @include btn-transition;
+            @include checkbox-effect;
+            &__text {
+                @include aside-text
+            }
+            &__count {
+                @include aside-count-text
+            }
+        }
+    }
+    
+}
+

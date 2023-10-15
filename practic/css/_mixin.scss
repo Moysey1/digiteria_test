@@ -1,0 +1,180 @@
+@import '_variables.scss';
+
+@function margin($number) {
+    @return $number*$base-margin;
+}
+
+
+@mixin content-mobile-title {
+    font: {
+        weight: 400;
+        size: 22px;
+    }
+    line-height: 28px;
+}
+
+@mixin aside-text {
+    font: {
+        weight:400;
+        size: 14px;
+    }
+    line-height: 16px;
+}
+
+@mixin aside-count-text {
+    font: {
+        weight:400;
+        size: 12px;
+    };
+    line-height: 14px;
+    color: rgba(170, 170, 170, 1)
+    
+}
+
+@mixin header-font {
+    font: {
+        weight: 500;
+        size: 14px;
+    }
+    list-style: 17px;
+}
+
+@mixin aside-title {
+    font: {
+        weight: 700;
+        size: 16px;
+        
+    };
+    line-height: 20px;
+}
+
+@mixin content-title {
+    font: {
+        weight:400;
+        size: 14px;
+    };
+    line-height: 16px;
+}
+
+@mixin content-sale {
+    font: {
+        weight: 700;
+        size: 14px;
+        
+    };
+    line-height: 14px;
+}
+
+@mixin content-new-price {
+    font: {
+        weight: 700;
+        size: 16px;
+        
+    };
+    line-height: 14px;
+}
+
+@mixin castom-checkbox {
+    &__label {
+        cursor: pointer;
+    }
+    &__checkbox {
+        position: absolute;
+        opacity: 0;
+        cursor: pointer;
+    }
+    &__checkbox + &__text::before {
+        content: '';
+        display: inline-block;
+        width: 20px;
+        height: 20px;
+        border: 1px solid rgba(213, 213, 213, 1);
+        border-radius: 3px;
+        background-color: #fff;
+        vertical-align: middle;
+        margin-right: 10px;
+    }
+
+    
+    &__checkbox:checked + &__text::before {
+        content: '\2660';
+        display: inline-block;
+        width: 20px;
+        height: 20px;
+        text-align: center;
+        font-size: 16px;
+        color: black;
+        vertical-align: middle;
+        line-height: 20px;
+        margin-right: 10px;
+        background-color:rgba(115, 151, 245, 1);
+        border-color:rgba(115, 151, 245, 1) ;
+    }
+}
+
+@mixin checkbox-effect {
+    &__checkbox:hover + &__text::before {
+        border-color: $sale-back;
+        
+    }
+
+    &__checkbox:focus + &__text::before {
+        border-color: $sale-back;
+        
+    }
+    
+    &__checkbox:focus + &__text {
+        color: $sale-back;
+        
+    }
+}
+
+@mixin base-btn {
+    padding: 12px 10px;
+    border-radius: 4px;
+    margin-top: auto;
+}
+
+@mixin btn-effect {
+    &:hover {
+        background-color:$font-hover-color;
+        color:$color-white;
+        transform:scale(1.1);
+    }
+
+    &:focus {
+        box-shadow: -1px 1px 12px 2px rgba(14, 138, 234, 0.41);
+        outline: 2px solid $border-color;
+    }
+
+    &:active {
+        background-color:$font-hover-color;
+        color:$color-white;
+        transform:scale(0.9);
+    }
+}
+
+@mixin input-focus {
+    &:focus {
+        box-shadow: 0px 0px 12px -1px rgba(14, 138, 234, 0.33) inset;
+        border: 1px solid $border-color;
+    }
+}
+
+
+@mixin btn-transition {
+    transition: color 0.3s ease-in-out, background-color 0.3s ease-in-out, transform 0.3s ease-in-out, border-color 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+}
+
+@mixin text-effect {
+    &:hover {
+        color:$sale-back;
+    }
+    &:focus {
+        outline: 2px solid $sale-back;
+        outline-offset: 5px;
+    }
+    &:active {
+        color: $color-gray;
+    }
+}

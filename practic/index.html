@@ -1,0 +1,570 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/normalise.css">
+    <link rel="stylesheet" href="css/style.css">
+    <title>test Kozlenko</title>
+</head>
+    <body>
+        <div class="container">
+            <header class="header">
+                <div class="header-desktop">
+                    <div class="header-desktop__info">
+                        <a href="#" class="header-desktop__info-logo">
+                            <img class="header-desktop__info-logo__img" src="./img/material-symbols_image.png" alt="Логотип">
+                            <span >Логотип</span>
+                        </a>
+                        <button class="header-desktop__info-btn btn-reset" type="button">
+                            Каталог
+                        </button>
+                    </div>
+                    <div class="header-desktop__search">
+                        <label class="header-desktop__search-label">
+                            <input class="header-desktop__search-input" type="text" placeholder="Поиск по 100 000 товаров">
+                        </label>
+                    </div>
+                    <nav class="header-desktop__nav">
+                        <ul class="header-desktop__nav-list">
+                            <li class="header-desktop__nav-item" tabindex="0">
+                                <a class="header-desktop__nav-item__link" href="#" tabindex="-1">
+                                    Информация о компании
+                                </a> 
+                            </li>
+                            <li class="header-desktop__nav-item" tabindex="0">
+                                <a class="header-desktop__nav-item__link" href="#" tabindex="-1">
+                                    Контакты
+                                </a>
+                            </li>
+                            <li class="header-desktop__nav-item" tabindex="0">
+                                <a class="header-desktop__nav-item__link" href="#" tabindex="-1">
+                                    Полезные ссылки
+                                </a>
+                            </li>
+                        </ul>
+                    </nav>
+                </div>
+                
+                <div class="header__mobile">
+                    <button class="header__mobile-filter btn-reset">
+                        <svg class="header__mobile-filter__img" width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path   d="M0.283445 10.6843C-0.0944816 10.3064 -0.0944816 9.69363 0.283445 9.3157L9.3157 0.283445C9.69363 -0.0944804 10.3064 -0.0944804 10.6843 0.283445C11.0622 0.661371 11.0622 1.27411 10.6843 1.65204L3.30408 9.03226L19.0323 9.03226C19.5667 9.03226 20 9.46553 20 10C20 10.5345 19.5667 10.9677 19.0323 10.9677L3.30408 10.9677L10.6843 18.348C11.0622 18.7259 11.0622 19.3386 10.6843 19.7166C10.3064 20.0945 9.69363 20.0945 9.3157 19.7166L0.283445 10.6843Z" fill="#333333"/>
+                        </svg>
+                    </button>
+                    <div class="header__mobile-info">
+                        <input class="header__mobile-info__input" type="text" placeholder="Запрос">
+                        <button class="header__mobile-info__btn-reset btn-reset">
+                            <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path fill-rule="evenodd" clip-rule="evenodd" d="M18.3334 10C18.3334 14.6024 14.6025 18.3333 10.0001 18.3333C5.39771 18.3333 1.66675 14.6024 1.66675 10C1.66675 5.39764 5.39771 1.66668 10.0001 1.66668C14.6025 1.66668 18.3334 5.39764 18.3334 10ZM13.0893 8.08927C13.4148 7.76383 13.4148 7.23619 13.0893 6.91076C12.7639 6.58532 12.2363 6.58532 11.9108 6.91076L10.0001 8.8215L8.08934 6.91076C7.7639 6.58532 7.23626 6.58532 6.91083 6.91076C6.58539 7.23619 6.58539 7.76383 6.91083 8.08927L8.82157 10L6.91083 11.9108C6.58539 12.2362 6.58539 12.7638 6.91083 13.0893C7.23626 13.4147 7.7639 13.4147 8.08934 13.0893L10.0001 11.1785L11.9108 13.0893C12.2363 13.4147 12.7639 13.4147 13.0893 13.0893C13.4148 12.7638 13.4148 12.2362 13.0893 11.9108L11.1786 10L13.0893 8.08927Z" fill="#333333"/>
+                            </svg>
+                        </button>
+                        <button class="header__mobile-info__btn-search btn-reset">Найти</button>
+                    </div>
+                </div>
+            </header>
+            <main>
+                <aside>
+                    <section class="filter">
+                        <div class="filter__category">
+                            <h3 class="filter__category-title">Название категории</h3>
+                            <ul class="filter__category-list">
+                                <li class="filter__category-item" tabindex="0">
+                                    <p class="filter__category-item__desc">Название категории</p>
+                                    <span class="filter__category-item__count">3</span>
+                                </li>
+                                <li class="filter__category-item" tabindex="0">
+                                    <p class="filter__category-item__desc">Название категории</p>
+                                    <span class="filter__category-item__count">3</span>
+                                </li>
+                                <li class="filter__category-item" tabindex="0">
+                                    <p class="filter__category-item__desc">Название категории</p>
+                                    <span class="filter__category-item__count">3</span>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="filter__price">
+                            <h3 class="filter__price-title"> Цена </h3>
+                            <div class="filter__price-limit">
+                                <label class="filter__price-limit__label">
+                                    <input class="filter__price-limit__input" type="text" placeholder="от">
+                                </label>
+                                    <span class="filter__price-limit__desc"></span>
+                                <label class="filter__price-limit__label">
+                                    <input class="filter__price-limit__input" type="text" placeholder="до">
+                                </label>
+                                    
+                            </div>
+                            
+                        </div>
+                        <div class="filter__brand">
+                            <div class="filter__brand-desc">
+                                <h3 class="filter__brand-title">Бренд</h3>
+                                <button class="filter__brand-btn btn-reset">Очистить</button>
+                            </div>
+                            <div class="filter__brand-search">
+                                <label class="filter__brand-label">
+                                    <input class="filter__brand-input" type="text" placeholder="Поиск">
+                                </label>
+                                <ul class="filter__brand-list" tabindex="-1">
+                                    <li class="filter__brand-item">
+                                        <label class="filter__brand-item__label" >
+                                            <input class="filter__brand-item__checkbox" type="checkbox" >
+                                            <span class="filter__brand-item__text">Атрибут</span>
+                                        </label>
+                                        <span class="filter__brand-item__count">3</span>
+                                    </li>
+                                    <li class="filter__brand-item">
+                                        <label class="filter__brand-item__label" >
+                                            <input class="filter__brand-item__checkbox" type="checkbox" >
+                                            <span class="filter__brand-item__text">Атрибут</span>
+                                        </label>
+                                        <span class="filter__brand-item__count">3</span>
+                                    </li>
+                                    <li class="filter__brand-item">
+                                        <label class="filter__brand-item__label" >
+                                            <input class="filter__brand-item__checkbox" type="checkbox" >
+                                            <span class="filter__brand-item__text">Атрибут</span>
+                                        </label>
+                                        <span class="filter__brand-item__count">3</span>
+                                    </li>
+                                    <li class="filter__brand-item">
+                                        <label class="filter__brand-item__label" >
+                                            <input class="filter__brand-item__checkbox" type="checkbox" >
+                                            <span class="filter__brand-item__text">Атрибут</span>
+                                        </label>
+                                        <span class="filter__brand-item__count">3</span>
+                                    </li>
+                                    <li class="filter__brand-item">
+                                        <label class="filter__brand-item__label" >
+                                            <input class="filter__brand-item__checkbox" type="checkbox" >
+                                            <span class="filter__brand-item__text">Атрибут</span>
+                                        </label>
+                                        <span class="filter__brand-item__count">3</span>
+                                    </li>
+                                    <li class="filter__brand-item">
+                                        <label class="filter__brand-item__label" >
+                                            <input class="filter__brand-item__checkbox" type="checkbox" >
+                                            <span class="filter__brand-item__text">Атрибут</span>
+                                        </label>
+                                        <span class="filter__brand-item__count">3</span>
+                                    </li>
+                                    <li class="filter__brand-item">
+                                        <label class="filter__brand-item__label" >
+                                            <input class="filter__brand-item__checkbox" type="checkbox" >
+                                            <span class="filter__brand-item__text">Атрибут</span>
+                                        </label>
+                                        <span class="filter__brand-item__count">3</span>
+                                    </li>
+                                    <li class="filter__brand-item">
+                                        <label class="filter__brand-item__label" >
+                                            <input class="filter__brand-item__checkbox" type="checkbox" >
+                                            <span class="filter__brand-item__text">Атрибут</span>
+                                        </label>
+                                        <span class="filter__brand-item__count">3</span>
+                                    </li>
+                                    <li class="filter__brand-item">
+                                        <label class="filter__brand-item__label" >
+                                            <input class="filter__brand-item__checkbox" type="checkbox" >
+                                            <span class="filter__brand-item__text">Атрибут</span>
+                                        </label>
+                                        <span class="filter__brand-item__count">3</span>
+                                    </li>
+                                    <li class="filter__brand-item">
+                                        <label class="filter__brand-item__label" >
+                                            <input class="filter__brand-item__checkbox" type="checkbox" >
+                                            <span class="filter__brand-item__text">Атрибут</span>
+                                        </label>
+                                        <span class="filter__brand-item__count">3</span>
+                                    </li>
+                                    <li class="filter__brand-item">
+                                        <label class="filter__brand-item__label" >
+                                            <input class="filter__brand-item__checkbox" type="checkbox" >
+                                            <span class="filter__brand-item__text">Атрибут</span>
+                                        </label>
+                                        <span class="filter__brand-item__count">3</span>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="filter__size">
+                            <h3 class="filter__size-title">
+                                Размер
+                            </h3>
+                            <ul class="filter__size-list" tabindex="-1">
+                                <li class="filter__size-item">
+                                    <label class="filter__size-item__label" >
+                                        <input class="filter__size-item__checkbox" type="checkbox" >
+                                        <span class="filter__size-item__text">Атрибут</span>
+                                    </label>
+                                    <span class="filter__size-item__count">3</span>
+                                </li>
+                                <li class="filter__size-item">
+                                    <label class="filter__size-item__label" >
+                                        <input class="filter__size-item__checkbox" type="checkbox" >
+                                        <span class="filter__size-item__text">Атрибут</span>
+                                    </label>
+                                    <span class="filter__size-item__count">3</span>
+                                </li>
+                                <li class="filter__size-item">
+                                    <label class="filter__size-item__label" >
+                                        <input class="filter__size-item__checkbox" type="checkbox" >
+                                        <span class="filter__size-item__text">Атрибут</span>
+                                    </label>
+                                    <span class="filter__size-item__count">3</span>
+                                </li>
+                                <li class="filter__size-item">
+                                    <label class="filter__size-item__label" >
+                                        <input class="filter__size-item__checkbox" type="checkbox" >
+                                        <span class="filter__size-item__text">Атрибут</span>
+                                    </label>
+                                    <span class="filter__size-item__count">3</span>
+                                </li>
+                                <li class="filter__size-item">
+                                    <label class="filter__size-item__label" >
+                                        <input class="filter__size-item__checkbox" type="checkbox" >
+                                        <span class="filter__size-item__text">Атрибут</span>
+                                    </label>
+                                    <span class="filter__size-item__count">3</span>
+                                </li>
+                            </ul>
+                        </div>
+                    </section>
+                </aside>
+                <section class="content container__content">
+                    <h2 class="content__title">
+                        Название категории
+                    </h2>
+                    <ul class="content__list">
+                        <li class="content__item" >
+                            <div class="content__item-block">
+                                <svg class="content__item-block__img" width="60" height="60" viewBox="0 0 60 60" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <g opacity="0.5" clip-path="url(#clip0_6_1106)">
+                                        <path fill-rule="evenodd" clip-rule="evenodd" d="M58.23 11.1487C58.7521 11.3571 59.1997 11.7171 59.5152 12.1823C59.8307 12.6476 59.9996 13.1966 60 13.7587V46.2412C59.9996 46.8034 59.8307 47.3524 59.5152 47.8177C59.1997 48.2829 58.7521 48.6429 58.23 48.8512L31.0425 59.7262C30.3721 59.9944 29.6242 59.9944 28.9538 59.7262L1.76625 48.8512C1.24488 48.6423 0.79802 48.282 0.483227 47.8169C0.168434 47.3517 0.000130725 46.8029 0 46.2412L0 13.7587C0.000130725 13.1971 0.168434 12.6483 0.483227 12.1831C0.79802 11.718 1.24488 11.3577 1.76625 11.1487L27.9113 0.689995L27.9488 0.678745L28.9538 0.273745C29.6253 0.00461759 30.3747 0.00461759 31.0463 0.273745L32.055 0.678745L32.0925 0.689995L58.23 11.1487ZM39.015 7.5L15.9375 16.7287L6.9225 13.125L3.75 14.3962V15.8962L28.125 25.6462V55.3537L30 56.1037L31.875 55.3537V25.65L56.25 15.9V14.4L53.0775 13.1287L30 22.3537L20.985 18.75L44.0625 9.52125L39.015 7.5Z" fill="#A6A9C7"/>
+                                    </g>
+                                    <defs>
+                                        <clipPath>
+                                            <rect width="60" height="60" fill="white"/>
+                                        </clipPath>
+                                    </defs>
+                                </svg>
+                                <span class="content__item-block__hit">Хит продаж
+                                    <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M3.33337 11.6667C3.33337 10.2083 3.6806 8.90972 4.37504 7.77083C5.06949 6.63194 5.83337 5.67361 6.66671 4.89583C7.50004 4.11806 8.26393 3.52417 8.95837 3.11417L10 2.5V5.25C10 5.76389 10.1737 6.17 10.5209 6.46833C10.8681 6.76667 11.257 6.91611 11.6875 6.91667C11.9237 6.91667 12.1495 6.86806 12.365 6.77083C12.5806 6.67361 12.7784 6.51389 12.9584 6.29167L13.3334 5.83333C14.3334 6.41667 15.1389 7.22555 15.75 8.26C16.3612 9.29444 16.6667 10.43 16.6667 11.6667C16.6667 12.8889 16.3681 14.0036 15.7709 15.0108C15.1737 16.0181 14.3889 16.8128 13.4167 17.395C13.6528 17.0617 13.837 16.6969 13.9692 16.3008C14.1014 15.9047 14.1673 15.485 14.1667 15.0417C14.1667 14.4861 14.0625 13.9617 13.8542 13.4683C13.6459 12.975 13.3473 12.5342 12.9584 12.1458L10 9.25L7.06254 12.1458C6.65976 12.5486 6.35421 12.9931 6.14587 13.4792C5.93754 13.9653 5.83337 14.4861 5.83337 15.0417C5.83337 15.4861 5.89949 15.9064 6.03171 16.3025C6.16393 16.6986 6.34782 17.0631 6.58337 17.3958C5.61115 16.8125 4.82643 16.0172 4.22921 15.01C3.63199 14.0028 3.33337 12.8883 3.33337 11.6667ZM10 11.5833L11.7709 13.3125C12.007 13.5486 12.1875 13.8125 12.3125 14.1042C12.4375 14.3958 12.5 14.7083 12.5 15.0417C12.5 15.7222 12.257 16.3019 11.7709 16.7808C11.2848 17.2597 10.6945 17.4994 10 17.5C9.3056 17.5 8.71532 17.2603 8.22921 16.7808C7.7431 16.3014 7.50004 15.7217 7.50004 15.0417C7.50004 14.7222 7.56254 14.4131 7.68754 14.1142C7.81254 13.8153 7.9931 13.5481 8.22921 13.3125L10 11.5833Z" fill="#FF8743"/>
+                                    </svg>
+                                </span>
+                                <span class="content__item-block__sale"> 25%</span>
+                            </div>
+                            <p class="content__item-sub-title">Бренд</p>
+                            <p class="content__item-title" tabindex="0">Полное название товара в несколько строк для вида с обрывом в конце...</p>
+                            <span class="content__item-new-price">
+                                5 990 ₽
+                                <span class="content__item-old-price">5 990 ₽</span>
+                            </span>
+                            <button class="content__item-btn btn-reset">Купить</button>
+                        </li>
+                        <li class="content__item">
+                            <div class="content__item-block">
+                                <svg class="content__item-block__img" width="60" height="60" viewBox="0 0 60 60" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <g opacity="0.5" clip-path="url(#clip0_6_1106)">
+                                        <path fill-rule="evenodd" clip-rule="evenodd" d="M58.23 11.1487C58.7521 11.3571 59.1997 11.7171 59.5152 12.1823C59.8307 12.6476 59.9996 13.1966 60 13.7587V46.2412C59.9996 46.8034 59.8307 47.3524 59.5152 47.8177C59.1997 48.2829 58.7521 48.6429 58.23 48.8512L31.0425 59.7262C30.3721 59.9944 29.6242 59.9944 28.9538 59.7262L1.76625 48.8512C1.24488 48.6423 0.79802 48.282 0.483227 47.8169C0.168434 47.3517 0.000130725 46.8029 0 46.2412L0 13.7587C0.000130725 13.1971 0.168434 12.6483 0.483227 12.1831C0.79802 11.718 1.24488 11.3577 1.76625 11.1487L27.9113 0.689995L27.9488 0.678745L28.9538 0.273745C29.6253 0.00461759 30.3747 0.00461759 31.0463 0.273745L32.055 0.678745L32.0925 0.689995L58.23 11.1487ZM39.015 7.5L15.9375 16.7287L6.9225 13.125L3.75 14.3962V15.8962L28.125 25.6462V55.3537L30 56.1037L31.875 55.3537V25.65L56.25 15.9V14.4L53.0775 13.1287L30 22.3537L20.985 18.75L44.0625 9.52125L39.015 7.5Z" fill="#A6A9C7"/>
+                                    </g>
+                                    <defs>
+                                        <clipPath>
+                                            <rect width="60" height="60" fill="white"/>
+                                        </clipPath>
+                                    </defs>
+                                </svg>
+                                <span class="content__item-block__hit">Хит продаж
+                                    <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M3.33337 11.6667C3.33337 10.2083 3.6806 8.90972 4.37504 7.77083C5.06949 6.63194 5.83337 5.67361 6.66671 4.89583C7.50004 4.11806 8.26393 3.52417 8.95837 3.11417L10 2.5V5.25C10 5.76389 10.1737 6.17 10.5209 6.46833C10.8681 6.76667 11.257 6.91611 11.6875 6.91667C11.9237 6.91667 12.1495 6.86806 12.365 6.77083C12.5806 6.67361 12.7784 6.51389 12.9584 6.29167L13.3334 5.83333C14.3334 6.41667 15.1389 7.22555 15.75 8.26C16.3612 9.29444 16.6667 10.43 16.6667 11.6667C16.6667 12.8889 16.3681 14.0036 15.7709 15.0108C15.1737 16.0181 14.3889 16.8128 13.4167 17.395C13.6528 17.0617 13.837 16.6969 13.9692 16.3008C14.1014 15.9047 14.1673 15.485 14.1667 15.0417C14.1667 14.4861 14.0625 13.9617 13.8542 13.4683C13.6459 12.975 13.3473 12.5342 12.9584 12.1458L10 9.25L7.06254 12.1458C6.65976 12.5486 6.35421 12.9931 6.14587 13.4792C5.93754 13.9653 5.83337 14.4861 5.83337 15.0417C5.83337 15.4861 5.89949 15.9064 6.03171 16.3025C6.16393 16.6986 6.34782 17.0631 6.58337 17.3958C5.61115 16.8125 4.82643 16.0172 4.22921 15.01C3.63199 14.0028 3.33337 12.8883 3.33337 11.6667ZM10 11.5833L11.7709 13.3125C12.007 13.5486 12.1875 13.8125 12.3125 14.1042C12.4375 14.3958 12.5 14.7083 12.5 15.0417C12.5 15.7222 12.257 16.3019 11.7709 16.7808C11.2848 17.2597 10.6945 17.4994 10 17.5C9.3056 17.5 8.71532 17.2603 8.22921 16.7808C7.7431 16.3014 7.50004 15.7217 7.50004 15.0417C7.50004 14.7222 7.56254 14.4131 7.68754 14.1142C7.81254 13.8153 7.9931 13.5481 8.22921 13.3125L10 11.5833Z" fill="#FF8743"/>
+                                    </svg>
+                                </span>
+                                <span class="content__item-block__sale"> 25%</span>
+                            </div>
+                            <p class="content__item-sub-title">Бренд</p>
+                            <p class="content__item-title primary-color" tabindex="0">Полное название товара в несколько строк для вида с обрывом в конце...</p>
+                            <span class="content__item-new-price">
+                                5 990 ₽
+                                <span class="content__item-old-price">5 990 ₽</span>
+                            </span>
+                            <button class="content__item-btn btn-reset">Купить</button>
+                        </li>
+                        <li class="content__item content__item-not__available">
+                            <div class="content__item-block content__item-not__available-block">
+                                <svg class="content__item-block__img" width="60" height="60" viewBox="0 0 60 60" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <g opacity="0.5" clip-path="url(#clip0_6_1106)">
+                                        <path fill-rule="evenodd" clip-rule="evenodd" d="M58.23 11.1487C58.7521 11.3571 59.1997 11.7171 59.5152 12.1823C59.8307 12.6476 59.9996 13.1966 60 13.7587V46.2412C59.9996 46.8034 59.8307 47.3524 59.5152 47.8177C59.1997 48.2829 58.7521 48.6429 58.23 48.8512L31.0425 59.7262C30.3721 59.9944 29.6242 59.9944 28.9538 59.7262L1.76625 48.8512C1.24488 48.6423 0.79802 48.282 0.483227 47.8169C0.168434 47.3517 0.000130725 46.8029 0 46.2412L0 13.7587C0.000130725 13.1971 0.168434 12.6483 0.483227 12.1831C0.79802 11.718 1.24488 11.3577 1.76625 11.1487L27.9113 0.689995L27.9488 0.678745L28.9538 0.273745C29.6253 0.00461759 30.3747 0.00461759 31.0463 0.273745L32.055 0.678745L32.0925 0.689995L58.23 11.1487ZM39.015 7.5L15.9375 16.7287L6.9225 13.125L3.75 14.3962V15.8962L28.125 25.6462V55.3537L30 56.1037L31.875 55.3537V25.65L56.25 15.9V14.4L53.0775 13.1287L30 22.3537L20.985 18.75L44.0625 9.52125L39.015 7.5Z" fill="#A6A9C7"/>
+                                    </g>
+                                    <defs>
+                                        <clipPath>
+                                            <rect width="60" height="60" fill="white"/>
+                                        </clipPath>
+                                    </defs>
+                                </svg>
+                                <span class="content__item-block__hit">Хит продаж
+                                    <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M3.33337 11.6667C3.33337 10.2083 3.6806 8.90972 4.37504 7.77083C5.06949 6.63194 5.83337 5.67361 6.66671 4.89583C7.50004 4.11806 8.26393 3.52417 8.95837 3.11417L10 2.5V5.25C10 5.76389 10.1737 6.17 10.5209 6.46833C10.8681 6.76667 11.257 6.91611 11.6875 6.91667C11.9237 6.91667 12.1495 6.86806 12.365 6.77083C12.5806 6.67361 12.7784 6.51389 12.9584 6.29167L13.3334 5.83333C14.3334 6.41667 15.1389 7.22555 15.75 8.26C16.3612 9.29444 16.6667 10.43 16.6667 11.6667C16.6667 12.8889 16.3681 14.0036 15.7709 15.0108C15.1737 16.0181 14.3889 16.8128 13.4167 17.395C13.6528 17.0617 13.837 16.6969 13.9692 16.3008C14.1014 15.9047 14.1673 15.485 14.1667 15.0417C14.1667 14.4861 14.0625 13.9617 13.8542 13.4683C13.6459 12.975 13.3473 12.5342 12.9584 12.1458L10 9.25L7.06254 12.1458C6.65976 12.5486 6.35421 12.9931 6.14587 13.4792C5.93754 13.9653 5.83337 14.4861 5.83337 15.0417C5.83337 15.4861 5.89949 15.9064 6.03171 16.3025C6.16393 16.6986 6.34782 17.0631 6.58337 17.3958C5.61115 16.8125 4.82643 16.0172 4.22921 15.01C3.63199 14.0028 3.33337 12.8883 3.33337 11.6667ZM10 11.5833L11.7709 13.3125C12.007 13.5486 12.1875 13.8125 12.3125 14.1042C12.4375 14.3958 12.5 14.7083 12.5 15.0417C12.5 15.7222 12.257 16.3019 11.7709 16.7808C11.2848 17.2597 10.6945 17.4994 10 17.5C9.3056 17.5 8.71532 17.2603 8.22921 16.7808C7.7431 16.3014 7.50004 15.7217 7.50004 15.0417C7.50004 14.7222 7.56254 14.4131 7.68754 14.1142C7.81254 13.8153 7.9931 13.5481 8.22921 13.3125L10 11.5833Z" fill="#FF8743"/>
+                                    </svg>
+                                </span>
+                                <span class="content__item-block__sale"> 25%</span>
+                            </div>
+                            <p class="content__item-sub-title">Бренд</p>
+                            <p class="content__item-title" tabindex="0">Полное название товара в несколько строк для вида с обрывом в конце...</p>
+                            <span class="content__item-new-price content__item-not__available-price">
+                                5 990 ₽
+                                <span class="content__item-old-price">5 990 ₽</span>
+                            </span>
+                            <button class="btn-reset content__item-not__available-btn" disabled>Сообщить о поступлении</button>
+                        </li>
+                        <li class="content__item">
+                            <div class="content__item-block">
+                                <svg class="content__item-block__img" width="60" height="60" viewBox="0 0 60 60" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <g opacity="0.5" clip-path="url(#clip0_6_1106)">
+                                        <path fill-rule="evenodd" clip-rule="evenodd" d="M58.23 11.1487C58.7521 11.3571 59.1997 11.7171 59.5152 12.1823C59.8307 12.6476 59.9996 13.1966 60 13.7587V46.2412C59.9996 46.8034 59.8307 47.3524 59.5152 47.8177C59.1997 48.2829 58.7521 48.6429 58.23 48.8512L31.0425 59.7262C30.3721 59.9944 29.6242 59.9944 28.9538 59.7262L1.76625 48.8512C1.24488 48.6423 0.79802 48.282 0.483227 47.8169C0.168434 47.3517 0.000130725 46.8029 0 46.2412L0 13.7587C0.000130725 13.1971 0.168434 12.6483 0.483227 12.1831C0.79802 11.718 1.24488 11.3577 1.76625 11.1487L27.9113 0.689995L27.9488 0.678745L28.9538 0.273745C29.6253 0.00461759 30.3747 0.00461759 31.0463 0.273745L32.055 0.678745L32.0925 0.689995L58.23 11.1487ZM39.015 7.5L15.9375 16.7287L6.9225 13.125L3.75 14.3962V15.8962L28.125 25.6462V55.3537L30 56.1037L31.875 55.3537V25.65L56.25 15.9V14.4L53.0775 13.1287L30 22.3537L20.985 18.75L44.0625 9.52125L39.015 7.5Z" fill="#A6A9C7"/>
+                                    </g>
+                                    <defs>
+                                        <clipPath>
+                                            <rect width="60" height="60" fill="white"/>
+                                        </clipPath>
+                                    </defs>
+                                </svg>
+                                <span class="content__item-block__hit">Хит продаж
+                                    <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M3.33337 11.6667C3.33337 10.2083 3.6806 8.90972 4.37504 7.77083C5.06949 6.63194 5.83337 5.67361 6.66671 4.89583C7.50004 4.11806 8.26393 3.52417 8.95837 3.11417L10 2.5V5.25C10 5.76389 10.1737 6.17 10.5209 6.46833C10.8681 6.76667 11.257 6.91611 11.6875 6.91667C11.9237 6.91667 12.1495 6.86806 12.365 6.77083C12.5806 6.67361 12.7784 6.51389 12.9584 6.29167L13.3334 5.83333C14.3334 6.41667 15.1389 7.22555 15.75 8.26C16.3612 9.29444 16.6667 10.43 16.6667 11.6667C16.6667 12.8889 16.3681 14.0036 15.7709 15.0108C15.1737 16.0181 14.3889 16.8128 13.4167 17.395C13.6528 17.0617 13.837 16.6969 13.9692 16.3008C14.1014 15.9047 14.1673 15.485 14.1667 15.0417C14.1667 14.4861 14.0625 13.9617 13.8542 13.4683C13.6459 12.975 13.3473 12.5342 12.9584 12.1458L10 9.25L7.06254 12.1458C6.65976 12.5486 6.35421 12.9931 6.14587 13.4792C5.93754 13.9653 5.83337 14.4861 5.83337 15.0417C5.83337 15.4861 5.89949 15.9064 6.03171 16.3025C6.16393 16.6986 6.34782 17.0631 6.58337 17.3958C5.61115 16.8125 4.82643 16.0172 4.22921 15.01C3.63199 14.0028 3.33337 12.8883 3.33337 11.6667ZM10 11.5833L11.7709 13.3125C12.007 13.5486 12.1875 13.8125 12.3125 14.1042C12.4375 14.3958 12.5 14.7083 12.5 15.0417C12.5 15.7222 12.257 16.3019 11.7709 16.7808C11.2848 17.2597 10.6945 17.4994 10 17.5C9.3056 17.5 8.71532 17.2603 8.22921 16.7808C7.7431 16.3014 7.50004 15.7217 7.50004 15.0417C7.50004 14.7222 7.56254 14.4131 7.68754 14.1142C7.81254 13.8153 7.9931 13.5481 8.22921 13.3125L10 11.5833Z" fill="#FF8743"/>
+                                    </svg>
+                                </span>
+                                <span class="content__item-block__sale"> 25%</span>
+                            </div>
+                            <p class="content__item-sub-title">Бренд</p>
+                            <p class="content__item-title" tabindex="0">Полное название товара в несколько строк для вида с обрывом в конце...</p>
+                            <span class="content__item-new-price">
+                                5 990 ₽
+                                <span class="content__item-old-price">5 990 ₽</span>
+                            </span>
+                            <button class="content__item-btn btn-reset">Купить</button>
+                        </li>
+                        <li class="content__item">
+                            <div class="content__item-block">
+                                <svg class="content__item-block__img" width="60" height="60" viewBox="0 0 60 60" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <g opacity="0.5" clip-path="url(#clip0_6_1106)">
+                                        <path fill-rule="evenodd" clip-rule="evenodd" d="M58.23 11.1487C58.7521 11.3571 59.1997 11.7171 59.5152 12.1823C59.8307 12.6476 59.9996 13.1966 60 13.7587V46.2412C59.9996 46.8034 59.8307 47.3524 59.5152 47.8177C59.1997 48.2829 58.7521 48.6429 58.23 48.8512L31.0425 59.7262C30.3721 59.9944 29.6242 59.9944 28.9538 59.7262L1.76625 48.8512C1.24488 48.6423 0.79802 48.282 0.483227 47.8169C0.168434 47.3517 0.000130725 46.8029 0 46.2412L0 13.7587C0.000130725 13.1971 0.168434 12.6483 0.483227 12.1831C0.79802 11.718 1.24488 11.3577 1.76625 11.1487L27.9113 0.689995L27.9488 0.678745L28.9538 0.273745C29.6253 0.00461759 30.3747 0.00461759 31.0463 0.273745L32.055 0.678745L32.0925 0.689995L58.23 11.1487ZM39.015 7.5L15.9375 16.7287L6.9225 13.125L3.75 14.3962V15.8962L28.125 25.6462V55.3537L30 56.1037L31.875 55.3537V25.65L56.25 15.9V14.4L53.0775 13.1287L30 22.3537L20.985 18.75L44.0625 9.52125L39.015 7.5Z" fill="#A6A9C7"/>
+                                    </g>
+                                    <defs>
+                                        <clipPath>
+                                            <rect width="60" height="60" fill="white"/>
+                                        </clipPath>
+                                    </defs>
+                                </svg>
+                                <span class="content__item-block__hit">Хит продаж
+                                    <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M3.33337 11.6667C3.33337 10.2083 3.6806 8.90972 4.37504 7.77083C5.06949 6.63194 5.83337 5.67361 6.66671 4.89583C7.50004 4.11806 8.26393 3.52417 8.95837 3.11417L10 2.5V5.25C10 5.76389 10.1737 6.17 10.5209 6.46833C10.8681 6.76667 11.257 6.91611 11.6875 6.91667C11.9237 6.91667 12.1495 6.86806 12.365 6.77083C12.5806 6.67361 12.7784 6.51389 12.9584 6.29167L13.3334 5.83333C14.3334 6.41667 15.1389 7.22555 15.75 8.26C16.3612 9.29444 16.6667 10.43 16.6667 11.6667C16.6667 12.8889 16.3681 14.0036 15.7709 15.0108C15.1737 16.0181 14.3889 16.8128 13.4167 17.395C13.6528 17.0617 13.837 16.6969 13.9692 16.3008C14.1014 15.9047 14.1673 15.485 14.1667 15.0417C14.1667 14.4861 14.0625 13.9617 13.8542 13.4683C13.6459 12.975 13.3473 12.5342 12.9584 12.1458L10 9.25L7.06254 12.1458C6.65976 12.5486 6.35421 12.9931 6.14587 13.4792C5.93754 13.9653 5.83337 14.4861 5.83337 15.0417C5.83337 15.4861 5.89949 15.9064 6.03171 16.3025C6.16393 16.6986 6.34782 17.0631 6.58337 17.3958C5.61115 16.8125 4.82643 16.0172 4.22921 15.01C3.63199 14.0028 3.33337 12.8883 3.33337 11.6667ZM10 11.5833L11.7709 13.3125C12.007 13.5486 12.1875 13.8125 12.3125 14.1042C12.4375 14.3958 12.5 14.7083 12.5 15.0417C12.5 15.7222 12.257 16.3019 11.7709 16.7808C11.2848 17.2597 10.6945 17.4994 10 17.5C9.3056 17.5 8.71532 17.2603 8.22921 16.7808C7.7431 16.3014 7.50004 15.7217 7.50004 15.0417C7.50004 14.7222 7.56254 14.4131 7.68754 14.1142C7.81254 13.8153 7.9931 13.5481 8.22921 13.3125L10 11.5833Z" fill="#FF8743"/>
+                                    </svg>
+                                </span>
+                                <span class="content__item-block__sale"> 25%</span>
+                            </div>
+                            <p class="content__item-sub-title">Бренд</p>
+                            <p class="content__item-title" tabindex="0">Полное название товара в несколько строк для вида с обрывом в конце...</p>
+                            <span class="content__item-new-price">
+                                5 990 ₽
+                                <span class="content__item-old-price">5 990 ₽</span>
+                            </span>
+                            <button class="content__item-btn btn-reset">Купить</button>
+                        </li>
+                        <li class="content__item">
+                            <div class="content__item-block">
+                                <svg class="content__item-block__img" width="60" height="60" viewBox="0 0 60 60" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <g opacity="0.5" clip-path="url(#clip0_6_1106)">
+                                        <path fill-rule="evenodd" clip-rule="evenodd" d="M58.23 11.1487C58.7521 11.3571 59.1997 11.7171 59.5152 12.1823C59.8307 12.6476 59.9996 13.1966 60 13.7587V46.2412C59.9996 46.8034 59.8307 47.3524 59.5152 47.8177C59.1997 48.2829 58.7521 48.6429 58.23 48.8512L31.0425 59.7262C30.3721 59.9944 29.6242 59.9944 28.9538 59.7262L1.76625 48.8512C1.24488 48.6423 0.79802 48.282 0.483227 47.8169C0.168434 47.3517 0.000130725 46.8029 0 46.2412L0 13.7587C0.000130725 13.1971 0.168434 12.6483 0.483227 12.1831C0.79802 11.718 1.24488 11.3577 1.76625 11.1487L27.9113 0.689995L27.9488 0.678745L28.9538 0.273745C29.6253 0.00461759 30.3747 0.00461759 31.0463 0.273745L32.055 0.678745L32.0925 0.689995L58.23 11.1487ZM39.015 7.5L15.9375 16.7287L6.9225 13.125L3.75 14.3962V15.8962L28.125 25.6462V55.3537L30 56.1037L31.875 55.3537V25.65L56.25 15.9V14.4L53.0775 13.1287L30 22.3537L20.985 18.75L44.0625 9.52125L39.015 7.5Z" fill="#A6A9C7"/>
+                                    </g>
+                                    <defs>
+                                        <clipPath>
+                                            <rect width="60" height="60" fill="white"/>
+                                        </clipPath>
+                                    </defs>
+                                </svg>
+                                <span class="content__item-block__hit">Хит продаж
+                                    <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M3.33337 11.6667C3.33337 10.2083 3.6806 8.90972 4.37504 7.77083C5.06949 6.63194 5.83337 5.67361 6.66671 4.89583C7.50004 4.11806 8.26393 3.52417 8.95837 3.11417L10 2.5V5.25C10 5.76389 10.1737 6.17 10.5209 6.46833C10.8681 6.76667 11.257 6.91611 11.6875 6.91667C11.9237 6.91667 12.1495 6.86806 12.365 6.77083C12.5806 6.67361 12.7784 6.51389 12.9584 6.29167L13.3334 5.83333C14.3334 6.41667 15.1389 7.22555 15.75 8.26C16.3612 9.29444 16.6667 10.43 16.6667 11.6667C16.6667 12.8889 16.3681 14.0036 15.7709 15.0108C15.1737 16.0181 14.3889 16.8128 13.4167 17.395C13.6528 17.0617 13.837 16.6969 13.9692 16.3008C14.1014 15.9047 14.1673 15.485 14.1667 15.0417C14.1667 14.4861 14.0625 13.9617 13.8542 13.4683C13.6459 12.975 13.3473 12.5342 12.9584 12.1458L10 9.25L7.06254 12.1458C6.65976 12.5486 6.35421 12.9931 6.14587 13.4792C5.93754 13.9653 5.83337 14.4861 5.83337 15.0417C5.83337 15.4861 5.89949 15.9064 6.03171 16.3025C6.16393 16.6986 6.34782 17.0631 6.58337 17.3958C5.61115 16.8125 4.82643 16.0172 4.22921 15.01C3.63199 14.0028 3.33337 12.8883 3.33337 11.6667ZM10 11.5833L11.7709 13.3125C12.007 13.5486 12.1875 13.8125 12.3125 14.1042C12.4375 14.3958 12.5 14.7083 12.5 15.0417C12.5 15.7222 12.257 16.3019 11.7709 16.7808C11.2848 17.2597 10.6945 17.4994 10 17.5C9.3056 17.5 8.71532 17.2603 8.22921 16.7808C7.7431 16.3014 7.50004 15.7217 7.50004 15.0417C7.50004 14.7222 7.56254 14.4131 7.68754 14.1142C7.81254 13.8153 7.9931 13.5481 8.22921 13.3125L10 11.5833Z" fill="#FF8743"/>
+                                    </svg>
+                                </span>
+                                <span class="content__item-block__sale"> 25%</span>
+                            </div>
+                            <p class="content__item-sub-title">Бренд</p>
+                            <p class="content__item-title" tabindex="0">Полное название товара в несколько строк для вида с обрывом в конце...</p>
+                            <span class="content__item-new-price">
+                                5 990 ₽
+                                <span class="content__item-old-price">5 990 ₽</span>
+                            </span>
+                            <button class="content__item-btn btn-reset">Купить</button>
+                        </li>
+                        <li class="content__item">
+                            <div class="content__item-block">
+                                <svg class="content__item-block__img" width="60" height="60" viewBox="0 0 60 60" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <g opacity="0.5" clip-path="url(#clip0_6_1106)">
+                                        <path fill-rule="evenodd" clip-rule="evenodd" d="M58.23 11.1487C58.7521 11.3571 59.1997 11.7171 59.5152 12.1823C59.8307 12.6476 59.9996 13.1966 60 13.7587V46.2412C59.9996 46.8034 59.8307 47.3524 59.5152 47.8177C59.1997 48.2829 58.7521 48.6429 58.23 48.8512L31.0425 59.7262C30.3721 59.9944 29.6242 59.9944 28.9538 59.7262L1.76625 48.8512C1.24488 48.6423 0.79802 48.282 0.483227 47.8169C0.168434 47.3517 0.000130725 46.8029 0 46.2412L0 13.7587C0.000130725 13.1971 0.168434 12.6483 0.483227 12.1831C0.79802 11.718 1.24488 11.3577 1.76625 11.1487L27.9113 0.689995L27.9488 0.678745L28.9538 0.273745C29.6253 0.00461759 30.3747 0.00461759 31.0463 0.273745L32.055 0.678745L32.0925 0.689995L58.23 11.1487ZM39.015 7.5L15.9375 16.7287L6.9225 13.125L3.75 14.3962V15.8962L28.125 25.6462V55.3537L30 56.1037L31.875 55.3537V25.65L56.25 15.9V14.4L53.0775 13.1287L30 22.3537L20.985 18.75L44.0625 9.52125L39.015 7.5Z" fill="#A6A9C7"/>
+                                    </g>
+                                    <defs>
+                                        <clipPath >
+                                            <rect width="60" height="60" fill="white"/>
+                                        </clipPath>
+                                    </defs>
+                                </svg>
+                                <span class="content__item-block__hit">Хит продаж
+                                    <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M3.33337 11.6667C3.33337 10.2083 3.6806 8.90972 4.37504 7.77083C5.06949 6.63194 5.83337 5.67361 6.66671 4.89583C7.50004 4.11806 8.26393 3.52417 8.95837 3.11417L10 2.5V5.25C10 5.76389 10.1737 6.17 10.5209 6.46833C10.8681 6.76667 11.257 6.91611 11.6875 6.91667C11.9237 6.91667 12.1495 6.86806 12.365 6.77083C12.5806 6.67361 12.7784 6.51389 12.9584 6.29167L13.3334 5.83333C14.3334 6.41667 15.1389 7.22555 15.75 8.26C16.3612 9.29444 16.6667 10.43 16.6667 11.6667C16.6667 12.8889 16.3681 14.0036 15.7709 15.0108C15.1737 16.0181 14.3889 16.8128 13.4167 17.395C13.6528 17.0617 13.837 16.6969 13.9692 16.3008C14.1014 15.9047 14.1673 15.485 14.1667 15.0417C14.1667 14.4861 14.0625 13.9617 13.8542 13.4683C13.6459 12.975 13.3473 12.5342 12.9584 12.1458L10 9.25L7.06254 12.1458C6.65976 12.5486 6.35421 12.9931 6.14587 13.4792C5.93754 13.9653 5.83337 14.4861 5.83337 15.0417C5.83337 15.4861 5.89949 15.9064 6.03171 16.3025C6.16393 16.6986 6.34782 17.0631 6.58337 17.3958C5.61115 16.8125 4.82643 16.0172 4.22921 15.01C3.63199 14.0028 3.33337 12.8883 3.33337 11.6667ZM10 11.5833L11.7709 13.3125C12.007 13.5486 12.1875 13.8125 12.3125 14.1042C12.4375 14.3958 12.5 14.7083 12.5 15.0417C12.5 15.7222 12.257 16.3019 11.7709 16.7808C11.2848 17.2597 10.6945 17.4994 10 17.5C9.3056 17.5 8.71532 17.2603 8.22921 16.7808C7.7431 16.3014 7.50004 15.7217 7.50004 15.0417C7.50004 14.7222 7.56254 14.4131 7.68754 14.1142C7.81254 13.8153 7.9931 13.5481 8.22921 13.3125L10 11.5833Z" fill="#FF8743"/>
+                                    </svg>
+                                </span>
+                                <span class="content__item-block__sale"> 25%</span>
+                            </div>
+                            <p class="content__item-sub-title">Бренд</p>
+                            <p class="content__item-title" tabindex="0">Полное название товара в несколько строк для вида с обрывом в конце...</p>
+                            <span class="content__item-new-price">
+                                5 990 ₽
+                                <span class="content__item-old-price">5 990 ₽</span>
+                            </span>
+                            <button class="content__item-btn btn-reset">Купить</button>
+                        </li>
+                        <li class="content__item">
+                            <div class="content__item-block">
+                                <svg class="content__item-block__img" width="60" height="60" viewBox="0 0 60 60" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <g opacity="0.5" clip-path="url(#clip0_6_1106)">
+                                        <path fill-rule="evenodd" clip-rule="evenodd" d="M58.23 11.1487C58.7521 11.3571 59.1997 11.7171 59.5152 12.1823C59.8307 12.6476 59.9996 13.1966 60 13.7587V46.2412C59.9996 46.8034 59.8307 47.3524 59.5152 47.8177C59.1997 48.2829 58.7521 48.6429 58.23 48.8512L31.0425 59.7262C30.3721 59.9944 29.6242 59.9944 28.9538 59.7262L1.76625 48.8512C1.24488 48.6423 0.79802 48.282 0.483227 47.8169C0.168434 47.3517 0.000130725 46.8029 0 46.2412L0 13.7587C0.000130725 13.1971 0.168434 12.6483 0.483227 12.1831C0.79802 11.718 1.24488 11.3577 1.76625 11.1487L27.9113 0.689995L27.9488 0.678745L28.9538 0.273745C29.6253 0.00461759 30.3747 0.00461759 31.0463 0.273745L32.055 0.678745L32.0925 0.689995L58.23 11.1487ZM39.015 7.5L15.9375 16.7287L6.9225 13.125L3.75 14.3962V15.8962L28.125 25.6462V55.3537L30 56.1037L31.875 55.3537V25.65L56.25 15.9V14.4L53.0775 13.1287L30 22.3537L20.985 18.75L44.0625 9.52125L39.015 7.5Z" fill="#A6A9C7"/>
+                                    </g>
+                                    <defs>
+                                        <clipPath>
+                                            <rect width="60" height="60" fill="white"/>
+                                        </clipPath>
+                                    </defs>
+                                </svg>
+                                <span class="content__item-block__hit">Хит продаж
+                                    <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M3.33337 11.6667C3.33337 10.2083 3.6806 8.90972 4.37504 7.77083C5.06949 6.63194 5.83337 5.67361 6.66671 4.89583C7.50004 4.11806 8.26393 3.52417 8.95837 3.11417L10 2.5V5.25C10 5.76389 10.1737 6.17 10.5209 6.46833C10.8681 6.76667 11.257 6.91611 11.6875 6.91667C11.9237 6.91667 12.1495 6.86806 12.365 6.77083C12.5806 6.67361 12.7784 6.51389 12.9584 6.29167L13.3334 5.83333C14.3334 6.41667 15.1389 7.22555 15.75 8.26C16.3612 9.29444 16.6667 10.43 16.6667 11.6667C16.6667 12.8889 16.3681 14.0036 15.7709 15.0108C15.1737 16.0181 14.3889 16.8128 13.4167 17.395C13.6528 17.0617 13.837 16.6969 13.9692 16.3008C14.1014 15.9047 14.1673 15.485 14.1667 15.0417C14.1667 14.4861 14.0625 13.9617 13.8542 13.4683C13.6459 12.975 13.3473 12.5342 12.9584 12.1458L10 9.25L7.06254 12.1458C6.65976 12.5486 6.35421 12.9931 6.14587 13.4792C5.93754 13.9653 5.83337 14.4861 5.83337 15.0417C5.83337 15.4861 5.89949 15.9064 6.03171 16.3025C6.16393 16.6986 6.34782 17.0631 6.58337 17.3958C5.61115 16.8125 4.82643 16.0172 4.22921 15.01C3.63199 14.0028 3.33337 12.8883 3.33337 11.6667ZM10 11.5833L11.7709 13.3125C12.007 13.5486 12.1875 13.8125 12.3125 14.1042C12.4375 14.3958 12.5 14.7083 12.5 15.0417C12.5 15.7222 12.257 16.3019 11.7709 16.7808C11.2848 17.2597 10.6945 17.4994 10 17.5C9.3056 17.5 8.71532 17.2603 8.22921 16.7808C7.7431 16.3014 7.50004 15.7217 7.50004 15.0417C7.50004 14.7222 7.56254 14.4131 7.68754 14.1142C7.81254 13.8153 7.9931 13.5481 8.22921 13.3125L10 11.5833Z" fill="#FF8743"/>
+                                    </svg>
+                                </span>
+                                <span class="content__item-block__sale"> 25%</span>
+                            </div>
+                            <p class="content__item-sub-title">Бренд</p>
+                            <p class="content__item-title" tabindex="0">Полное название товара в несколько строк для вида с обрывом в конце...</p>
+                            <span class="content__item-new-price">
+                                5 990 ₽
+                                <span class="content__item-old-price">5 990 ₽</span>
+                            </span>
+                            <button class="content__item-btn btn-reset">Купить</button>
+                        </li>
+                        <li class="content__item">
+                            <div class="content__item-block">
+                                <svg class="content__item-block__img" width="60" height="60" viewBox="0 0 60 60" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <g opacity="0.5" clip-path="url(#clip0_6_1106)">
+                                        <path fill-rule="evenodd" clip-rule="evenodd" d="M58.23 11.1487C58.7521 11.3571 59.1997 11.7171 59.5152 12.1823C59.8307 12.6476 59.9996 13.1966 60 13.7587V46.2412C59.9996 46.8034 59.8307 47.3524 59.5152 47.8177C59.1997 48.2829 58.7521 48.6429 58.23 48.8512L31.0425 59.7262C30.3721 59.9944 29.6242 59.9944 28.9538 59.7262L1.76625 48.8512C1.24488 48.6423 0.79802 48.282 0.483227 47.8169C0.168434 47.3517 0.000130725 46.8029 0 46.2412L0 13.7587C0.000130725 13.1971 0.168434 12.6483 0.483227 12.1831C0.79802 11.718 1.24488 11.3577 1.76625 11.1487L27.9113 0.689995L27.9488 0.678745L28.9538 0.273745C29.6253 0.00461759 30.3747 0.00461759 31.0463 0.273745L32.055 0.678745L32.0925 0.689995L58.23 11.1487ZM39.015 7.5L15.9375 16.7287L6.9225 13.125L3.75 14.3962V15.8962L28.125 25.6462V55.3537L30 56.1037L31.875 55.3537V25.65L56.25 15.9V14.4L53.0775 13.1287L30 22.3537L20.985 18.75L44.0625 9.52125L39.015 7.5Z" fill="#A6A9C7"/>
+                                    </g>
+                                    <defs>
+                                        <clipPath>
+                                            <rect width="60" height="60" fill="white"/>
+                                        </clipPath>
+                                    </defs>
+                                </svg>
+                                <span class="content__item-block__hit">Хит продаж
+                                    <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M3.33337 11.6667C3.33337 10.2083 3.6806 8.90972 4.37504 7.77083C5.06949 6.63194 5.83337 5.67361 6.66671 4.89583C7.50004 4.11806 8.26393 3.52417 8.95837 3.11417L10 2.5V5.25C10 5.76389 10.1737 6.17 10.5209 6.46833C10.8681 6.76667 11.257 6.91611 11.6875 6.91667C11.9237 6.91667 12.1495 6.86806 12.365 6.77083C12.5806 6.67361 12.7784 6.51389 12.9584 6.29167L13.3334 5.83333C14.3334 6.41667 15.1389 7.22555 15.75 8.26C16.3612 9.29444 16.6667 10.43 16.6667 11.6667C16.6667 12.8889 16.3681 14.0036 15.7709 15.0108C15.1737 16.0181 14.3889 16.8128 13.4167 17.395C13.6528 17.0617 13.837 16.6969 13.9692 16.3008C14.1014 15.9047 14.1673 15.485 14.1667 15.0417C14.1667 14.4861 14.0625 13.9617 13.8542 13.4683C13.6459 12.975 13.3473 12.5342 12.9584 12.1458L10 9.25L7.06254 12.1458C6.65976 12.5486 6.35421 12.9931 6.14587 13.4792C5.93754 13.9653 5.83337 14.4861 5.83337 15.0417C5.83337 15.4861 5.89949 15.9064 6.03171 16.3025C6.16393 16.6986 6.34782 17.0631 6.58337 17.3958C5.61115 16.8125 4.82643 16.0172 4.22921 15.01C3.63199 14.0028 3.33337 12.8883 3.33337 11.6667ZM10 11.5833L11.7709 13.3125C12.007 13.5486 12.1875 13.8125 12.3125 14.1042C12.4375 14.3958 12.5 14.7083 12.5 15.0417C12.5 15.7222 12.257 16.3019 11.7709 16.7808C11.2848 17.2597 10.6945 17.4994 10 17.5C9.3056 17.5 8.71532 17.2603 8.22921 16.7808C7.7431 16.3014 7.50004 15.7217 7.50004 15.0417C7.50004 14.7222 7.56254 14.4131 7.68754 14.1142C7.81254 13.8153 7.9931 13.5481 8.22921 13.3125L10 11.5833Z" fill="#FF8743"/>
+                                    </svg>
+                                </span>
+                                <span class="content__item-block__sale"> 25%</span>
+                            </div>
+                            <p class="content__item-sub-title">Бренд</p>
+                            <p class="content__item-title" tabindex="0">Полное название товара в несколько строк для вида с обрывом в конце...</p>
+                            <span class="content__item-new-price">
+                                5 990 ₽
+                                <span class="content__item-old-price">5 990 ₽</span>
+                            </span>
+                            <button class="content__item-btn btn-reset">Купить</button>
+                        </li>
+                        <li class="content__item">
+                            <div class="content__item-block">
+                                <svg class="content__item-block__img" width="60" height="60" viewBox="0 0 60 60" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <g opacity="0.5" clip-path="url(#clip0_6_1106)">
+                                        <path fill-rule="evenodd" clip-rule="evenodd" d="M58.23 11.1487C58.7521 11.3571 59.1997 11.7171 59.5152 12.1823C59.8307 12.6476 59.9996 13.1966 60 13.7587V46.2412C59.9996 46.8034 59.8307 47.3524 59.5152 47.8177C59.1997 48.2829 58.7521 48.6429 58.23 48.8512L31.0425 59.7262C30.3721 59.9944 29.6242 59.9944 28.9538 59.7262L1.76625 48.8512C1.24488 48.6423 0.79802 48.282 0.483227 47.8169C0.168434 47.3517 0.000130725 46.8029 0 46.2412L0 13.7587C0.000130725 13.1971 0.168434 12.6483 0.483227 12.1831C0.79802 11.718 1.24488 11.3577 1.76625 11.1487L27.9113 0.689995L27.9488 0.678745L28.9538 0.273745C29.6253 0.00461759 30.3747 0.00461759 31.0463 0.273745L32.055 0.678745L32.0925 0.689995L58.23 11.1487ZM39.015 7.5L15.9375 16.7287L6.9225 13.125L3.75 14.3962V15.8962L28.125 25.6462V55.3537L30 56.1037L31.875 55.3537V25.65L56.25 15.9V14.4L53.0775 13.1287L30 22.3537L20.985 18.75L44.0625 9.52125L39.015 7.5Z" fill="#A6A9C7"/>
+                                    </g>
+                                    <defs>
+                                        <clipPath>
+                                            <rect width="60" height="60" fill="white"/>
+                                        </clipPath>
+                                    </defs>
+                                </svg>
+                                <span class="content__item-block__hit">Хит продаж
+                                    <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M3.33337 11.6667C3.33337 10.2083 3.6806 8.90972 4.37504 7.77083C5.06949 6.63194 5.83337 5.67361 6.66671 4.89583C7.50004 4.11806 8.26393 3.52417 8.95837 3.11417L10 2.5V5.25C10 5.76389 10.1737 6.17 10.5209 6.46833C10.8681 6.76667 11.257 6.91611 11.6875 6.91667C11.9237 6.91667 12.1495 6.86806 12.365 6.77083C12.5806 6.67361 12.7784 6.51389 12.9584 6.29167L13.3334 5.83333C14.3334 6.41667 15.1389 7.22555 15.75 8.26C16.3612 9.29444 16.6667 10.43 16.6667 11.6667C16.6667 12.8889 16.3681 14.0036 15.7709 15.0108C15.1737 16.0181 14.3889 16.8128 13.4167 17.395C13.6528 17.0617 13.837 16.6969 13.9692 16.3008C14.1014 15.9047 14.1673 15.485 14.1667 15.0417C14.1667 14.4861 14.0625 13.9617 13.8542 13.4683C13.6459 12.975 13.3473 12.5342 12.9584 12.1458L10 9.25L7.06254 12.1458C6.65976 12.5486 6.35421 12.9931 6.14587 13.4792C5.93754 13.9653 5.83337 14.4861 5.83337 15.0417C5.83337 15.4861 5.89949 15.9064 6.03171 16.3025C6.16393 16.6986 6.34782 17.0631 6.58337 17.3958C5.61115 16.8125 4.82643 16.0172 4.22921 15.01C3.63199 14.0028 3.33337 12.8883 3.33337 11.6667ZM10 11.5833L11.7709 13.3125C12.007 13.5486 12.1875 13.8125 12.3125 14.1042C12.4375 14.3958 12.5 14.7083 12.5 15.0417C12.5 15.7222 12.257 16.3019 11.7709 16.7808C11.2848 17.2597 10.6945 17.4994 10 17.5C9.3056 17.5 8.71532 17.2603 8.22921 16.7808C7.7431 16.3014 7.50004 15.7217 7.50004 15.0417C7.50004 14.7222 7.56254 14.4131 7.68754 14.1142C7.81254 13.8153 7.9931 13.5481 8.22921 13.3125L10 11.5833Z" fill="#FF8743"/>
+                                    </svg>
+                                </span>
+                                <span class="content__item-block__sale"> 25%</span>
+                            </div>
+                            <p class="content__item-sub-title">Бренд</p>
+                            <p class="content__item-title" tabindex="0">Полное название товара в несколько строк для вида с обрывом в конце...</p>
+                            <span class="content__item-new-price">
+                                5 990 ₽
+                                <span class="content__item-old-price">5 990 ₽</span>
+                            </span>
+                            <button class="content__item-btn btn-reset">Купить</button>
+                        </li>
+                        <li class="content__item">
+                            <div class="content__item-block">
+                                <svg class="content__item-block__img" width="60" height="60" viewBox="0 0 60 60" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <g opacity="0.5" clip-path="url(#clip0_6_1106)">
+                                        <path fill-rule="evenodd" clip-rule="evenodd" d="M58.23 11.1487C58.7521 11.3571 59.1997 11.7171 59.5152 12.1823C59.8307 12.6476 59.9996 13.1966 60 13.7587V46.2412C59.9996 46.8034 59.8307 47.3524 59.5152 47.8177C59.1997 48.2829 58.7521 48.6429 58.23 48.8512L31.0425 59.7262C30.3721 59.9944 29.6242 59.9944 28.9538 59.7262L1.76625 48.8512C1.24488 48.6423 0.79802 48.282 0.483227 47.8169C0.168434 47.3517 0.000130725 46.8029 0 46.2412L0 13.7587C0.000130725 13.1971 0.168434 12.6483 0.483227 12.1831C0.79802 11.718 1.24488 11.3577 1.76625 11.1487L27.9113 0.689995L27.9488 0.678745L28.9538 0.273745C29.6253 0.00461759 30.3747 0.00461759 31.0463 0.273745L32.055 0.678745L32.0925 0.689995L58.23 11.1487ZM39.015 7.5L15.9375 16.7287L6.9225 13.125L3.75 14.3962V15.8962L28.125 25.6462V55.3537L30 56.1037L31.875 55.3537V25.65L56.25 15.9V14.4L53.0775 13.1287L30 22.3537L20.985 18.75L44.0625 9.52125L39.015 7.5Z" fill="#A6A9C7"/>
+                                    </g>
+                                    <defs>
+                                        <clipPath id="clip0_6_1106">
+                                            <rect width="60" height="60" fill="white"/>
+                                        </clipPath>
+                                    </defs>
+                                </svg>
+                                <span class="content__item-block__hit">Хит продаж
+                                    <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M3.33337 11.6667C3.33337 10.2083 3.6806 8.90972 4.37504 7.77083C5.06949 6.63194 5.83337 5.67361 6.66671 4.89583C7.50004 4.11806 8.26393 3.52417 8.95837 3.11417L10 2.5V5.25C10 5.76389 10.1737 6.17 10.5209 6.46833C10.8681 6.76667 11.257 6.91611 11.6875 6.91667C11.9237 6.91667 12.1495 6.86806 12.365 6.77083C12.5806 6.67361 12.7784 6.51389 12.9584 6.29167L13.3334 5.83333C14.3334 6.41667 15.1389 7.22555 15.75 8.26C16.3612 9.29444 16.6667 10.43 16.6667 11.6667C16.6667 12.8889 16.3681 14.0036 15.7709 15.0108C15.1737 16.0181 14.3889 16.8128 13.4167 17.395C13.6528 17.0617 13.837 16.6969 13.9692 16.3008C14.1014 15.9047 14.1673 15.485 14.1667 15.0417C14.1667 14.4861 14.0625 13.9617 13.8542 13.4683C13.6459 12.975 13.3473 12.5342 12.9584 12.1458L10 9.25L7.06254 12.1458C6.65976 12.5486 6.35421 12.9931 6.14587 13.4792C5.93754 13.9653 5.83337 14.4861 5.83337 15.0417C5.83337 15.4861 5.89949 15.9064 6.03171 16.3025C6.16393 16.6986 6.34782 17.0631 6.58337 17.3958C5.61115 16.8125 4.82643 16.0172 4.22921 15.01C3.63199 14.0028 3.33337 12.8883 3.33337 11.6667ZM10 11.5833L11.7709 13.3125C12.007 13.5486 12.1875 13.8125 12.3125 14.1042C12.4375 14.3958 12.5 14.7083 12.5 15.0417C12.5 15.7222 12.257 16.3019 11.7709 16.7808C11.2848 17.2597 10.6945 17.4994 10 17.5C9.3056 17.5 8.71532 17.2603 8.22921 16.7808C7.7431 16.3014 7.50004 15.7217 7.50004 15.0417C7.50004 14.7222 7.56254 14.4131 7.68754 14.1142C7.81254 13.8153 7.9931 13.5481 8.22921 13.3125L10 11.5833Z" fill="#FF8743"/>
+                                    </svg>
+                                </span>
+                                <span class="content__item-block__sale"> 25%</span>
+                            </div>
+                            <p class="content__item-sub-title">Бренд</p>
+                            <p class="content__item-title" tabindex="0">Полное название товара в несколько строк для вида с обрывом в конце...</p>
+                            <span class="content__item-new-price">
+                                5 990 ₽
+                                <span class="content__item-old-price">5 990 ₽</span>
+                            </span>
+                            <button class="content__item-btn btn-reset">Купить</button>
+                        </li>
+                        <li class="content__item">
+                            <div class="content__item-block">
+                                <svg class="content__item-block__img" width="60" height="60" viewBox="0 0 60 60" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <g opacity="0.5" clip-path="url(#clip0_6_1106)">
+                                        <path fill-rule="evenodd" clip-rule="evenodd" d="M58.23 11.1487C58.7521 11.3571 59.1997 11.7171 59.5152 12.1823C59.8307 12.6476 59.9996 13.1966 60 13.7587V46.2412C59.9996 46.8034 59.8307 47.3524 59.5152 47.8177C59.1997 48.2829 58.7521 48.6429 58.23 48.8512L31.0425 59.7262C30.3721 59.9944 29.6242 59.9944 28.9538 59.7262L1.76625 48.8512C1.24488 48.6423 0.79802 48.282 0.483227 47.8169C0.168434 47.3517 0.000130725 46.8029 0 46.2412L0 13.7587C0.000130725 13.1971 0.168434 12.6483 0.483227 12.1831C0.79802 11.718 1.24488 11.3577 1.76625 11.1487L27.9113 0.689995L27.9488 0.678745L28.9538 0.273745C29.6253 0.00461759 30.3747 0.00461759 31.0463 0.273745L32.055 0.678745L32.0925 0.689995L58.23 11.1487ZM39.015 7.5L15.9375 16.7287L6.9225 13.125L3.75 14.3962V15.8962L28.125 25.6462V55.3537L30 56.1037L31.875 55.3537V25.65L56.25 15.9V14.4L53.0775 13.1287L30 22.3537L20.985 18.75L44.0625 9.52125L39.015 7.5Z" fill="#A6A9C7"/>
+                                    </g>
+                                    <defs>
+                                        <clipPath>
+                                            <rect width="60" height="60" fill="white"/>
+                                        </clipPath>
+                                    </defs>
+                                </svg>
+                                <span class="content__item-block__hit">Хит продаж
+                                    <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M3.33337 11.6667C3.33337 10.2083 3.6806 8.90972 4.37504 7.77083C5.06949 6.63194 5.83337 5.67361 6.66671 4.89583C7.50004 4.11806 8.26393 3.52417 8.95837 3.11417L10 2.5V5.25C10 5.76389 10.1737 6.17 10.5209 6.46833C10.8681 6.76667 11.257 6.91611 11.6875 6.91667C11.9237 6.91667 12.1495 6.86806 12.365 6.77083C12.5806 6.67361 12.7784 6.51389 12.9584 6.29167L13.3334 5.83333C14.3334 6.41667 15.1389 7.22555 15.75 8.26C16.3612 9.29444 16.6667 10.43 16.6667 11.6667C16.6667 12.8889 16.3681 14.0036 15.7709 15.0108C15.1737 16.0181 14.3889 16.8128 13.4167 17.395C13.6528 17.0617 13.837 16.6969 13.9692 16.3008C14.1014 15.9047 14.1673 15.485 14.1667 15.0417C14.1667 14.4861 14.0625 13.9617 13.8542 13.4683C13.6459 12.975 13.3473 12.5342 12.9584 12.1458L10 9.25L7.06254 12.1458C6.65976 12.5486 6.35421 12.9931 6.14587 13.4792C5.93754 13.9653 5.83337 14.4861 5.83337 15.0417C5.83337 15.4861 5.89949 15.9064 6.03171 16.3025C6.16393 16.6986 6.34782 17.0631 6.58337 17.3958C5.61115 16.8125 4.82643 16.0172 4.22921 15.01C3.63199 14.0028 3.33337 12.8883 3.33337 11.6667ZM10 11.5833L11.7709 13.3125C12.007 13.5486 12.1875 13.8125 12.3125 14.1042C12.4375 14.3958 12.5 14.7083 12.5 15.0417C12.5 15.7222 12.257 16.3019 11.7709 16.7808C11.2848 17.2597 10.6945 17.4994 10 17.5C9.3056 17.5 8.71532 17.2603 8.22921 16.7808C7.7431 16.3014 7.50004 15.7217 7.50004 15.0417C7.50004 14.7222 7.56254 14.4131 7.68754 14.1142C7.81254 13.8153 7.9931 13.5481 8.22921 13.3125L10 11.5833Z" fill="#FF8743"/>
+                                    </svg>
+                                </span>
+                                <span class="content__item-block__sale"> 25%</span>
+                            </div>
+                            <p class="content__item-sub-title">Бренд</p>
+                            <p class="content__item-title" tabindex="0">Полное название товара в несколько строк для вида с обрывом в конце...</p>
+                            <span class="content__item-new-price">
+                                5 990 ₽
+                                <span class="content__item-old-price">5 990 ₽</span>
+                            </span>
+                            <button class="content__item-btn btn-reset">Купить</button>
+                        </li>
+                        
+                    </ul>
+                </section>
+            </main>
+        </div>
+        <script src="./js/index.js" defer></script>
+    </body>
+</html>
